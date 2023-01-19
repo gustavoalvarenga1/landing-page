@@ -8,6 +8,7 @@
 body {
   font-family: "Inter", sans-serif;
   background-color: rgb(208, 208, 208);
+  overflow-x: hidden;
 }
 
 .logo {
@@ -15,8 +16,6 @@ body {
   height: 42px;
   margin: auto 0 auto 5%;
   cursor: pointer;
-
-
 }
 
 .logo img {
@@ -29,8 +28,7 @@ header {
   display: flex;
   justify-content: space-between;
   background-color: white;
- /* box-shadow: 0 0 1rem black;*/
-
+  /* box-shadow: 0 0 1rem black;*/
 }
 
 #listaHeader {
@@ -53,55 +51,144 @@ header {
 }
 
 .carrossel {
-  border: 1px solid black;
   width: 1000px;
   height: 500px;
-  margin: 2% auto;
-  border-radius: 20px;
+  margin: 10px auto 50px auto;
+  border-radius: 5px;
   text-align: center;
+  overflow: hidden;
+}
+
+.slides {
+  width: 400%;
+  height: 500px;
+  display: flex;
+}
+
+.slides input {
+  display: none;
+}
+
+.primeiroSlide {
+  width: 1000px;
+  position: relative;
+  transition: 1s;
+}
+.primeiroSlide img {
+  width: 1000px;
+  height: 100%;
+}
+
+.slide {
+  width: 25%;
+  position: relative;
+  transition: 1s;
+}
+
+.slide img {
+  width: 1000px;
+  height: 100%;
+}
+
+.navegacaoManual {
+  position: absolute;
+  width: 1000px;
+  display: flex;
+  justify-content: center;
+  margin-top: 475px;
+  gap: 5px;
+}
+
+.manual-btn {
+  border: 2px solid white;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.manual-btn:hover {
+  background-color: white;
+  transition: 0.5s;
+}
+
+#radio1:checked ~ .primeiroSlide {
+  margin-left: 0;
+}
+
+#radio2:checked ~ .primeiroSlide {
+  margin-left: -25%;
+}
+
+#radio3:checked ~ .primeiroSlide {
+  margin-left: -50%;
+}
+
+#radio4:checked ~ .primeiroSlide {
+  margin-left: -75%;
+}
+
+.navegacaoAuto div {
+  border: 2px solid white;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.navegacaoAuto {
+  position: absolute;
+  width: 1000px;
+  margin-top: 475px;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+#radio1:checked ~ .navegacaoAuto .auto-btn1 {
+  background-color: white;
+}
+
+#radio2:checked ~ .navegacaoAuto .auto-btn2 {
+  background-color: white;
+}
+
+#radio3:checked ~ .navegacaoAuto .auto-btn3 {
+  background-color: white;
+}
+
+#radio4:checked ~ .navegacaoAuto .auto-btn4 {
+  background-color: white;
 }
 
 footer {
   width: 100%;
-  height: 22vh;
+  height: 20vh;
   display: flex;
-  justify-content: space-between;
   background-color: white;
-  align-items: right;
 }
 
-#listaFooter{
+#listaFooter {
   list-style-type: none;
   text-transform: capitalize;
   font-weight: 400;
-  margin-left:auto;
-  margin-top: 5px;
-  margin-right: 15px;
+  margin-left: auto;
+  margin-top: 1%;
+  margin-right: 4%;
   font-size: 15px;
-
-
-
 }
 
-#listaFooter a{
+#listaFooter li {
+  margin-top: 10px;
+}
+
+#listaFooter a {
   text-decoration: none;
   color: black;
 }
 
-#listaFooter li{
-  margin-top: 10px;
-
-
-}
-
-
-#listaFooter li img{
+#listaFooter li img {
   margin-right: 10px;
-
 }
 
-
-#email{
-    text-transform: none;
- 
+#email {
+  text-transform: none;
 }
