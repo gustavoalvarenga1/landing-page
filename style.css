@@ -49,18 +49,17 @@ header {
 #listaHeader #formulario li a {
   text-decoration: none;
   color: rgb(0, 0, 0);
-
 }
 
 #listaHeader li a:hover {
   color: rgb(139, 139, 139);
 }
 
-#carrossel {
+.carrossel {
   width: 1000px;
   height: 500px;
-  margin: 10px auto 50px auto;
-  border-radius: 5px;
+  margin: 75px auto 50px auto;
+  border-radius: 30px;
   text-align: center;
   overflow: hidden;
 }
@@ -165,23 +164,82 @@ header {
   background-color: white;
 }
 
-#containerInformacoes{
+#info {
+  width: 1000px;
+  height: 500px;
+  margin: 75px auto 20px auto;
+  border-radius: 35px;
+  display: flex;
+  background-color: white;
+}
+
+#info h2 {
+  text-transform: uppercase;
+  color: #8b8b8b;
+}
+
+.titulo {
+  padding-left: 550px;
+  padding-top: 10px;
+  position: absolute;
+}
+
+.imagemInfo {
+  width: 450px;
+  height: 425px;
+  margin: 40px 40px 35px 45px;
+  border-radius: 30px;
+}
+
+.imagemInfo img {
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+}
+
+/*.textoInfo{
+  border: 1px solid red;
+  width: 450px;
+  height: 425px;
+  border-radius: 5px;
+  margin-top:35px;
+  background-color: none;
+  display: flex;
+}  
+  */
+
+.textoInfo div {
+  border: 1px solid rgb(139, 139, 139);
+  font-size: 16px;
+  font-weight: 500px;
+  width: 400px;
+  height: 425px;
+  border-radius: 30px;
+  background-color: rgb(139, 139, 139);
+  margin-left: 10px;
+  margin-top: 40px;
+}
+
+.textoInfo p {
+  border: 1px solid rgb(139, 139, 139);
+  margin: 3%;
+  color: white;
+  font-weight: 500px;
+}
+
+#info1 {
   border: 1px solid red;
   width: 1000px;
   height: 500px;
-  margin: 50px auto 20px auto;
+  margin: 75px auto 20px auto;
 }
 
-#formulario{
+#formulario {
   border: 1px solid red;
   width: 1000px;
   height: 500px;
-  margin: 50px auto 20px auto;
-
+  margin: 75px auto 20px auto;
 }
-
-
-
 
 footer {
   width: 100%;
