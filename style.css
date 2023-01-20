@@ -3,11 +3,12 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: "Inter", sans-serif;
 }
 
 body {
-  font-family: "Inter", sans-serif;
-  background-color: rgb(208, 208, 208);
+  
+  background-color: #d0d0d0;
   overflow-x: hidden;
 }
 
@@ -52,7 +53,7 @@ header {
 }
 
 #listaHeader li a:hover {
-  color: rgb(139, 139, 139);
+  color: #8b8b8b;
 }
 
 .carrossel {
@@ -184,67 +185,133 @@ header {
   position: absolute;
 }
 
-.imagemInfo {
+.titulo1 {
+  margin-left: 45px;
+  padding-top: 10px;
+  position: absolute;
+}
+
+.containerEsquerda {
   width: 450px;
   height: 425px;
   margin: 40px 40px 35px 45px;
   border-radius: 30px;
+  background-color: #8b8b8b;
 }
 
-.imagemInfo img {
+.containerEsquerda img {
   width: 100%;
   height: 100%;
   border-radius: 30px;
 }
 
-/*.textoInfo{
-  border: 1px solid red;
-  width: 450px;
-  height: 425px;
-  border-radius: 5px;
-  margin-top:35px;
-  background-color: none;
-  display: flex;
-}  
-  */
-
-.textoInfo div {
-  border: 1px solid rgb(139, 139, 139);
-  font-size: 16px;
-  font-weight: 500px;
-  width: 400px;
+.containerDireita div {
+  border: 1px solid #8b8b8b;
+  width: 425px;
   height: 425px;
   border-radius: 30px;
-  background-color: rgb(139, 139, 139);
-  margin-left: 10px;
+  background-color: #8b8b8b;
+  margin-left: 5px;
   margin-top: 40px;
 }
 
-.textoInfo p {
-  border: 1px solid rgb(139, 139, 139);
+.containerDireita p {
+  border: 1px solid #8b8b8b;
   margin: 3%;
   color: white;
-  font-weight: 500px;
+  font-weight: 500;
+}
+
+.containerInfo {
+  border: 1px solid #8b8b8b;
+  background-color: #8b8b8b;
+}
+
+.containerInfo p {
+  border: 1px solid #8b8b8b;
+  padding-top: 10px;
+  margin: 3%;
+  color: white;
+  font-weight: 500;
+  display: block;
 }
 
 #info1 {
-  border: 1px solid red;
-  width: 1000px;
+  border: 1px solid white;
+  width: 540px;
   height: 500px;
   margin: 75px auto 20px auto;
+  border-radius: 30px;
+  background-color: white;
+}
+#info1 h2 {
+  text-transform: uppercase;
+  color: #8b8b8b;
+}
+
+.containerInfo {
+  width: 450px;
+  height: 425px;
+  margin: 40px 40px 35px 45px;
+  border-radius: 30px;
+  background-color: #8b8b8b;
 }
 
 #formulario {
-  border: 1px solid red;
-  width: 1000px;
-  height: 500px;
+  background-color: white;
+  width: 700px;
+  height: 450px;
   margin: 75px auto 20px auto;
+  border-radius: 30px;
 }
+
+#formulario h1 {
+  text-align: center;
+  color: #8b8b8b;
+  margin-top: 3%;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 5px;
+  width: 600px;
+  gap: 5px;
+  margin: 5% auto auto auto;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #8b8b8b;
+}
+
+input,
+textarea {
+  padding: 10px;
+  border: 1px solid #8b8b8b;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+button{
+  padding: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  background-color: #8b8b8b;
+  color: white;
+  cursor:pointer;
+
+}
+
 
 footer {
   width: 100%;
   height: 140px;
   display: flex;
+  margin-top: 50px;
   background-color: white;
 }
 
