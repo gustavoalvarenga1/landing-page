@@ -121,22 +121,22 @@
 
   
     <section id="formulario">
-      <form id="form">
+      <div id="form">
       <h1>Entre em contato</h1>
-        <label for="name">Nome:</label>
+        <label for="nome">Nome:</label>
         <input type="text" id="name">
 
         <label for="email">E-mail:</label>
         <input type="email" id="email">
 
         <label for="telefone">Telefone:</label>
-        <input type="text" id="telefone">
+        <input type="number" id="telefone">
 
-        <label for="message">Digite sua mensagem:</label>
-        <textarea name="message" id="message" ></textarea>
+        <label for="mensagem">Digite sua mensagem:</label>
+        <textarea name="mensagem" id="mensagem"></textarea>
 
-        <button type="submit">Enviar mensagem</button>
-      </form>
+      <button onclick="validar()">Enviar mensagem</button>
+      </div>
     </section>
 
 
@@ -157,9 +157,8 @@
           gustavo.alvarenga287@gmail.com
         </li>
         <li>
-          <img src="./imgs/icons/location.svg" alt="" /><a href="#">
-            Av. Sobe e desce, 123 - Cidade/ SP</a
-          >
+          <img src="./imgs/icons/location.svg" alt="" />
+            Av. Sobe e desce, 123 - Cidade/ SP
         </li>
       </ul>
     </footer>
