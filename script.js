@@ -12,7 +12,6 @@ function proximaImagem() {
   document.getElementById("radio" + contador).checked = true
 }
 
-
 function validar() {
   if (document.getElementById("name").value === "") {
     alert("Por favor, preencha seu nome!")
@@ -28,9 +27,9 @@ function validar() {
   //Verifica mensagem
   if (document.getElementById("mensagem").value === "") {
     alert("Por favor, digite a mensagem!")
-  }else{
-    alert("Mensagem enviada!")
   }
 }
+  
+
 
 
